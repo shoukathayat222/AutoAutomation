@@ -1,0 +1,21 @@
+body{
+	color: 	$black-text-color;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+ul, li{
+	padding-left: 0;
+	list-style: none;
+}
+a{
+	color: $black-text-color;
+}
+a:focus, a img, input:focus{
+	outline: none;
+}
+input, textarea{
+	border: 1px #b7b7b7 solid;
+	color: #000; 
+	font-size: 16px;
+}

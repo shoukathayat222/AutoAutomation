@@ -1,0 +1,113 @@
+autoautomation.com  => SFTP SSH
+autoautomation
+6UvFN7WGgDMvzSTT
+
+UN: autoaccess
+PW: kSicbF4bDe4vLXym
+
+host: autoautomation.com or mysql.autoautomation.com
+port: 3306
+
+
+108.60.221.251
+10000
+root
+MBTOsoN8UQusbJFc
+
+/opt/www/toyotaexpressservice.us
+
+
+108.60.221.250 SFTP SSH LIVE site
+root
+MBTOsoN8UQusbJFc
+/opt/www/toyotaexpressservice.us 
+
+
+
+telcoautomation.com		sftp ssh
+telcoauto0
+YSNpYpYP
+
+
+
+///////////////////////////////////////////////
+
+
+
+
+Server
+IP: 108.60.221.250
+Port: 10000
+Username: root
+Password: MBTOsoN8UQusbJFc //For FTP / SSH access
+
+url: dev.toyotaexpressservice.us (-www, -ftp)
+This domains is setup to take wildcard subdomains. so anything.toyotaexpressservice.us will pull up this site.
+Except www. and ftp. as they are directed to another server.
+
+Web Directory: /opt/www/toyotaexpressservice.us
+
+Mysql Info
+Port: 60200
+
+DB User
+Username: cH0wbepPWWyu2LjL
+Password: QALKC7mQEzz3q0e8
+
+Root User(Can only connect locally)
+Username: root
+Password: YoMWvcSSwlunrT5B
+
+///////////////////////////////////////
+
+Server
+IP: 108.60.221.251
+Port: 10000
+Username: root
+Password: MBTOsoN8UQusbJFc
+
+url: dev.toyotaexpressservice.us (-www, -ftp)
+This domains is setup to take wildcard subdomains. so anything.toyotaexpressservice.us will pull up this site.
+Except www. and ftp. as they are directed to another server.
+
+Web Directory: /opt/www/toyotaexpressservice.us
+
+Mysql Info
+Port: 60200
+
+DB User
+Username: cH0wbepPWWyu2LjL
+Password: QALKC7mQEzz3q0e8
+
+Root User(Can only connect locally)
+Username: root
+Password: YoMWvcSSwlunrT5B
+
+
+/////////////////////////////////
+
+Server
+IP: 108.60.221.252
+Port: 10000
+Username: root
+Password: MBTOsoN8UQusbJFc
+
+url: http://dev.txmservice.com/ (-www, -ftp)
+This domains is setup to take wildcard subdomains. so anything.txmservice.com will pull up this site.
+Except www. and ftp. as they are directed to another server.
+
+Web Directory: /opt/www/dxs
+
+Mysql Info
+Port: 60200
+Database: toyotaservice
+
+DB User:
+Username: cH0wbepPWWyu2LjL
+Password: QALKC7mQEzz3q0e8
+
+Root User:(Can only connect locally)
+Username: root
+Password: YoMWvcSSwlunrT5B
+
+

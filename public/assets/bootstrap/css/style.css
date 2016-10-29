@@ -1,0 +1,350 @@
+@import url(reset.css);
+/* line 12, style.scss */
+body { font-family: 'Roboto', sans-serif; overflow-x: hidden; }
+
+/* line 17, style.scss */
+h2 { font: 400 40px 'Roboto', sans-serif; color: #2196f3; margin-top: 0; margin-bottom: 30px; text-transform: uppercase; }
+@media only screen and (max-width: 767px) { /* line 17, style.scss */
+  h2 { font: 400 30px 'Roboto', sans-serif; } 
+  #testimonials .carousel-inner {
+    height: auto !important;
+}
+  }
+/* line 26, style.scss */
+h2 span { color: #000; }
+
+/* line 31, style.scss */
+.bggrey { background: #e5e5e5; }
+
+/****** header ******/
+/* line 36, style.scss */
+#header nav { background: white; margin-bottom: 0; border: 0px; min-height: 76px; }
+/* line 41, style.scss */
+#header nav .navbar-header { position: relative; }
+@media only screen and (max-width: 1170px) { /* line 44, style.scss */
+  #header nav .navbar-header .navbar-default { margin-top: 11px; }
+  /* line 47, style.scss */
+  #header nav .navbar-header .navbar-toggle { margin-top: 22px; }
+  /* line 50, style.scss */
+  #header nav .navbar-header img { max-width: 45%; } }
+@media only screen and (min-width: 1170px) { /* line 55, style.scss */
+  #header nav .navbar-header .navbar-brand { position: relative; z-index: 999; margin-left: 30px; margin-top: 15px; }
+  /* line 61, style.scss */
+  #header nav .navbar-header:before { background: url("/assets/images/logo-bg.png") no-repeat 0 0; height: 85px; width: 390px; position: absolute; content: " "; left: 0; top: 76px; z-index: 999; } }
+/* line 73, style.scss */
+#header nav .navbar-nav li { margin-top: 13px; }
+/* line 76, style.scss */
+#header nav .navbar-nav li a { font: 400 16px "Roboto"; color: #000; text-transform: uppercase; }
+@media only screen and (max-width: 1170px) { /* line 76, style.scss */
+  #header nav .navbar-nav li a { text-transform: capitalize; font: 400 15px "Roboto"; padding: 15px 6px; } }
+/* line 85, style.scss */
+#header nav .navbar-nav li a:hover { color: #F21137; }
+
+/****** main banner ******/
+/* line 94, style.scss */
+#mainbanner { position: relative; overflow: hidden; }
+/* line 97, style.scss */
+#mainbanner .banercontent { position: absolute; top: 175px; padding: 0 15px; left: 0; right: 0; text-align: right; }
+/* line 104, style.scss */
+#mainbanner .banercontent .buttons { display: block; margin-top: 62px; margin-right: 16px; }
+/* line 108, style.scss */
+#mainbanner .banercontent .buttons .btn { margin-right: 4px; }
+@media only screen and (min-width: 992px) and (max-width: 1280px) { /* line 97, style.scss */
+  #mainbanner .banercontent { top: 40px; } }
+/* line 116, style.scss */
+#mainbanner .innercontent { top: 50px; padding: 0 15px; }
+/* line 119, style.scss */
+#mainbanner .innercontent .btn-default { background: white; border-color: white; color: black; }
+@media only screen and (max-width: 767px) { /* line 126, style.scss */
+  #mainbanner .banercontent { top: auto; bottom: 20px; }
+  /* line 129, style.scss */
+  #mainbanner .banercontent .buttons { margin-top: 0px; text-align: center; }
+  /* line 132, style.scss */
+  #mainbanner .banercontent .buttons .btn { padding: 6px 10px; font-size: 15px; } }
+@media only screen and (max-width: 1170px) { /* line 141, style.scss */
+  #mainbanner .innercontent img { max-width: 30%; }
+  /* line 144, style.scss */
+  #mainbanner .innercontent .buttons { margin-top: 20px; margin-right: 0; }
+  /* line 147, style.scss */
+  #mainbanner .innercontent .buttons .btn { padding: 6px 10px; font-size: 15px; margin-right: 0; margin-left: 15px; } }
+
+/****** main call tool bar ******/
+/* line 159, style.scss */
+#calltoolbar { background: #2196f3; padding: 0px 0 20px; text-align: center; }
+/* line 163, style.scss */
+#calltoolbar span { font-size: 40px; font-weight: 100; text-transform: uppercase; color: #fff; }
+/* line 169, style.scss */
+#calltoolbar strong { font-size: 72px; font-weight: 500; text-transform: uppercase; color: #fff; position: relative; top: 12px; }
+
+@media only screen and (max-width: 1170px) { /* line 179, style.scss */
+  #calltoolbar { text-align: center; padding: 20px 0; }
+  /* line 182, style.scss */
+  #calltoolbar span { font-size: 20px; display: block; }
+  /* line 186, style.scss */
+  #calltoolbar strong { font-size: 40px; top: 0; } }
+/****** home page our services ******/
+/* line 194, style.scss */
+#ourservice { padding: 80px 0; text-align: center; }
+/* line 197, style.scss */
+#ourservice .bluecircle { border: 3px solid #2196f3; height: 150px; width: 150px; overflow: hidden; text-align: center; margin: auto; line-height: 150px; border-radius: 50%; margin-bottom: 15px; overflow: hidden; }
+/* line 208, style.scss */
+#ourservice .bluecircle img { border-radius: 50%; max-width: 90%; }
+/* line 213, style.scss */
+#ourservice .bluecircle + span { font-size: 24px; text-transform: uppercase; font-weight: 500; }
+@media only screen and (max-width: 767px) { /* line 213, style.scss */
+  #ourservice .bluecircle + span { margin-bottom: 25px; display: block; } }
+
+/****** home app feature ******/
+/* line 225, style.scss */
+#applicationfeature { padding: 80px 0; position: relative; background: #e5e5e5; color: #525252; }
+/* line 230, style.scss */
+#applicationfeature .list-group + .btn-lg { margin-top: 20px; }
+/* line 233, style.scss */
+#applicationfeature .list-group-item { border-color: #fff; }
+/* line 235, style.scss */
+#applicationfeature .list-group-item span { margin-right: 8px; }
+@media only screen and (min-width: 1170px) { /* line 240, style.scss */
+  #applicationfeature .img { position: absolute; right: -50px; top: -35px; } }
+
+/****** home general sevices ******/
+/* line 249, style.scss */
+#generalservice { padding: 130px 0; position: relative; color: #525252; overflow: hidden; }
+/* line 254, style.scss */
+#generalservice .list-group + .btn-lg { margin-top: 20px; }
+/* line 258, style.scss */
+#generalservice .list-group-item span { margin-right: 8px; }
+/* line 262, style.scss */
+#generalservice .img1 { position: absolute; left: 1.5%; bottom: -350px; z-index: -1; }
+/* line 268, style.scss */
+#generalservice .img2 { position: absolute; left: 5%; bottom: -285px; z-index: -1; }
+/* line 274, style.scss */
+#generalservice .img3 { position: absolute; left: 8.5%; bottom: -220px; z-index: -1; }
+@media only screen and (min-width: 768px) and (max-width: 992px) { /* line 281, style.scss */
+  #generalservice .img1 { bottom: -234px; }
+  /* line 284, style.scss */
+  #generalservice .img2 { bottom: -149px; }
+  /* line 287, style.scss */
+  #generalservice .img3 { bottom: -68px; } }
+@media only screen and (min-width: 993px) and (max-width: 1170px) { /* line 292, style.scss */
+  #generalservice .img1 { bottom: -400px; }
+  /* line 295, style.scss */
+  #generalservice .img2 { bottom: -315px; }
+  /* line 298, style.scss */
+  #generalservice .img3 { bottom: -222px; } }
+
+/****** home track and report ******/
+/* line 305, style.scss */
+#trackandreport { background: #e5e5e5; padding: 60px 0; overflow: hidden; }
+/* line 309, style.scss */
+#trackandreport h2 { margin-top: 50px; }
+/* line 312, style.scss */
+#trackandreport p { margin-bottom: 30px; }
+
+/****** home autodxs ******/
+/* line 318, style.scss */
+#autodxs { padding: 80px 0; }
+/* line 320, style.scss */
+#autodxs h2 { margin-top: 50px; line-height: 40px; margin-bottom: 25px; }
+/* line 324, style.scss */
+#autodxs h2 samp { font-size: 20px; color: #2196f3; font-family: 'Roboto', sans-serif; }
+/* line 330, style.scss */
+#autodxs p { line-height: 30px; font-size: 18px; margin-bottom: 30px; }
+/* line 335, style.scss */
+#autodxs .setpos { position: absolute; top: 85px; z-index: -1; right: 17px; }
+@media only screen and (max-width: 767px) { /* line 318, style.scss */
+  #autodxs { right: -50px; } }
+/* line 344, style.scss */
+#autodxs .appbtn { background: #454545; color: #fff; display: block; height: 80px; overflow: hidden; width: 80%; margin-bottom: 20px; border-radius: 5px; }
+/* line 353, style.scss */
+#autodxs .appbtn span { float: left; text-transform: uppercase; font-size: 20px; text-align: center; margin-left: 50px; margin-top: 20px; line-height: 20px; }
+/* line 361, style.scss */
+#autodxs .appbtn span span { text-transform: capitalize; font-size: 14px; float: none; margin: 0; }
+/* line 368, style.scss */
+#autodxs .appbtn .appicon { float: right; background: #131313; padding: 20px; }
+@media only screen and (max-width: 480px) { /* line 344, style.scss */
+  #autodxs .appbtn { width: 100%; }
+  /* line 375, style.scss */
+  #autodxs .appbtn span { font-size: 16px; margin-left: 20px; } }
+
+/****** testimonials ******/
+/* line 384, style.scss */
+#testimonials { background: #e5e5e5; padding: 80px 0; }
+/* line 387, style.scss */
+#testimonials h2 { margin-left: 90px; text-align: center; margin-bottom: 0px; }
+/* line 392, style.scss */
+#testimonials p { font-size: 14px; line-height: 26px; margin-top: 20px; }
+/* line 396, style.scss */
+#testimonials p span { font-size: 11px; color: #2196f3; margin-top: 10px; display: block; }
+/* line 401, style.scss */
+#testimonials p span img { margin-left: 20px; position: relative; top: 5px; }
+/* line 408, style.scss */
+#testimonials .carousel-inner { height: 210px; }
+/* line 411, style.scss */
+#testimonials .carousel-indicators { position: relative; left: 0; text-align: center; width: 100%; margin: 30px 0 0; bottom: 0; }
+@media only screen and (max-width: 767px) { /* line 420, style.scss */
+  #testimonials h2 { margin-left: 0; margin-bottom: 20px; }
+  /* line 424, style.scss */
+  #testimonials .item img { max-width: 100%; } }
+
+/****** support brands ******/
+/* line 431, style.scss */
+#supportarea { padding: 80px 0; border-top: 6px #2196f3 solid; border-bottom: 6px #2196f3 solid; text-align: center; overflow: hidden; }
+/* line 437, style.scss */
+#supportarea li { display: inline-block; margin: 0 10px; }
+/* line 440, style.scss */
+#supportarea li img { margin: auto; border-radius: 10px; margin-bottom: 10px; border: 1px #000 solid; }
+/* line 446, style.scss */
+#supportarea li span { display: block; font-size: 20px; }
+@media only screen and (max-width: 1170px) { /* line 437, style.scss */
+  #supportarea li { margin-bottom: 20px; margin-left: 4px; margin-right: 4px; } }
+
+/****** product listing page ******/
+/* line 459, style.scss */
+#productlisting { padding: 80px 0; position: relative; color: #525252; overflow: hidden; }
+/* line 464, style.scss */
+#productlisting h2 { margin-bottom: 80px; }
+/* line 467, style.scss */
+#productlisting .list-group + .btn-lg { margin-top: 20px; }
+/* line 471, style.scss */
+#productlisting .list-group-item span { margin-right: 8px; }
+/* line 475, style.scss */
+#productlisting img.logo { margin-bottom: 30px; }
+/* line 478, style.scss */
+#productlisting .toppostion { z-index: 99; }
+@media only screen and (max-width: 1170px) { /* line 482, style.scss */
+  #productlisting .img img { margin-bottom: -80px; margin-top: 40px; } }
+/* line 487, style.scss */
+#productlisting .img { position: absolute; left: 5%; bottom: -190px; }
+/* line 492, style.scss */
+#productlisting .img.right { right: -11%; left: auto; }
+@media only screen and (min-width: 769px) { /* line 497, style.scss */
+  #productlisting img.logo { margin-left: -90px; margin-bottom: 30px; } }
+@media only screen and (max-width: 991px) { /* line 503, style.scss */
+  #productlisting .img { position: absolute; left: -5%; bottom: -46px; }
+  /* line 508, style.scss */
+  #productlisting .img { bottom: -80px; }
+  /* line 510, style.scss */
+  #productlisting .img img { max-width: 80%; }
+  /* line 514, style.scss */
+  #productlisting img.logo { margin-left: -60px; max-width: 75%; margin-bottom: 20px; }
+  /* line 519, style.scss */
+  #productlisting h2 { margin-bottom: 20px; }
+  /* line 522, style.scss */
+  #productlisting .img.right { bottom: -130px; right: -73%; }
+  /* line 525, style.scss */
+  #productlisting .img.right img { max-width: 70%; }
+  /* line 529, style.scss */
+  #productlisting .list-group-item { margin-bottom: 5px; }
+  /* line 531, style.scss */
+  #productlisting .list-group-item img { width: 30px; height: 30px; }
+  /* line 536, style.scss */
+  #productlisting .btn-lg { padding: 7px 12px; font-size: 14px; margin-top: 0px !important; } }
+@media only screen and (min-width: 992px) and (max-width: 1170px) { /* line 543, style.scss */
+  #productlisting .img { bottom: -160px; left: -4%; }
+  /* line 546, style.scss */
+  #productlisting .img img { max-width: 80%; }
+  /* line 550, style.scss */
+  #productlisting .toppostion { z-index: 99; }
+  /* line 553, style.scss */
+  #productlisting img.logo { margin-left: -75px; margin-bottom: 20px; max-width: 75%; }
+  /* line 558, style.scss */
+  #productlisting h2 { margin-bottom: 20px; }
+  /* line 561, style.scss */
+  #productlisting .img.right { bottom: -200px; right: -35%; }
+  /* line 565, style.scss */
+  #productlisting .list-group-item { margin-bottom: 5px; }
+  /* line 567, style.scss */
+  #productlisting .list-group-item img { width: 30px; height: 30px; }
+  /* line 572, style.scss */
+  #productlisting .btn-lg { padding: 7px 12px; font-size: 14px; margin-top: 0px !important; } }
+@media only screen and (max-width: 767px) { /* line 579, style.scss */
+  #productlisting img.logo { margin-left: -58px; max-width: 65%; margin-bottom: 20px; }
+  /* line 584, style.scss */
+  #productlisting .toppostion { text-align: center; }
+  /* line 587, style.scss */
+  #productlisting .toppostion img.logo { margin-left: 0; }
+  /* line 590, style.scss */
+  #productlisting .toppostion .list-group { text-align: left; }
+  /* line 593, style.scss */
+  #productlisting .toppostion .btn-lg { float: left; }
+  /* line 596, style.scss */
+  #productlisting #productlisting .img { position: relative; left: 0; }
+  /* line 600, style.scss */
+  #productlisting #productlisting .img img { max-width: 100%; margin-bottom: 0; position: relative; bottom: -22%; } }
+
+/****** product detail ******/
+/* line 610, style.scss */
+#product-detail { padding: 80px 0; color: #525252; border-bottom: 80px #ddd solid; }
+/* line 614, style.scss */
+#product-detail h3 { color: #2196f3; font-size: 20px; margin-top: 40px; text-transform: uppercase; }
+/* line 620, style.scss */
+#product-detail p { margin-bottom: 30px; }
+/* line 623, style.scss */
+#product-detail h5 { font-size: 18px; text-transform: uppercase; margin-bottom: 15px; }
+/* line 628, style.scss */
+#product-detail .list-group-item span { margin-right: 8px; }
+@media only screen and (min-width: 1170px) { /* line 632, style.scss */
+  #product-detail img.logo { margin-left: -60px; } }
+
+/***** contact us ******/
+/* line 639, style.scss */
+#contactus { padding: 80px 0; }
+/* line 641, style.scss */
+#contactus h2 { margin-bottom: 70px; }
+/* line 644, style.scss */
+#contactus .contentbox { margin: 5px 0 15px; font-size: 15px; }
+@media only screen and (max-width: 639px) { /* line 648, style.scss */
+  #contactus .contentbox .row { margin-bottom: 15px; }
+  /* line 651, style.scss */
+  #contactus .contentbox span { width: 100%; } }
+
+/***** contact us form ******/
+/* line 659, style.scss */
+#contactforms { background: #e5e5e5; padding: 80px 0; }
+/* line 662, style.scss */
+#contactforms textarea { min-height: 80px; }
+/* line 665, style.scss */
+#contactforms textarea:not(*:root) { min-height: 90px; }
+/* line 668, style.scss */
+#contactforms .ie10 textarea, #contactforms :-ms-lang(x), #contactforms textarea { min-height: 90px; }
+
+/***** contact us page footer ******/
+/* line 674, style.scss */
+#footer.contactfooter { padding: 30px 0; text-align: center; }
+/* line 677, style.scss */
+#footer.contactfooter .logos { text-align: left; }
+/* line 680, style.scss */
+#footer.contactfooter p { font-size: 14px; margin-top: 20px; }
+/* line 683, style.scss */
+#footer.contactfooter p a { margin-right: 10px; }
+
+/***** footer ******/
+/* line 691, style.scss */
+#footer { background: #e5e5e5; padding: 50px 0 20px; border-bottom: 30px #000 solid; }
+/* line 695, style.scss */
+#footer h2 { font-size: 36px; text-transform: capitalize; margin-bottom: 15px; }
+/* line 700, style.scss */
+#footer .contentbox { margin: 5px 0 15px; font-size: 15px; }
+/* line 703, style.scss */
+#footer .contentbox .col-md-4.col-xs-6::after { content: " : "; position: absolute; right: -10px; top: 0; }
+@media only screen and (max-width: 639px) { /* line 710, style.scss */
+  #footer .contentbox .row { margin-bottom: 15px; }
+  /* line 713, style.scss */
+  #footer .contentbox span { width: 100%; } }
+/* line 720, style.scss */
+#footer .formset input[type="text"] { background: #e5e5e5; }
+/* line 724, style.scss */
+#footer .formset textarea { background: #e5e5e5; color: #000; margin-left: -15px; }
+/* line 729, style.scss */
+#footer .formset .btn { margin-top: 15px; }
+/* line 732, style.scss */
+#footer .formset .copyright { font-size: 14px; text-align: right; margin-right: 30px; margin-top: 100px; }
+/* line 737, style.scss */
+#footer .formset .copyright a { margin-right: 15px; }
+@media only screen and (max-width: 1170px) { /* line 742, style.scss */
+  #footer .formset textarea { margin-left: 0; }
+  /* line 745, style.scss */
+  #footer .formset .copyright { text-align: center; margin-left: 15px; margin-right: 15px; margin: 35px 15px 0; } }
+
+@media only screen and (max-width: 1170px) { /* line 756, style.scss */
+  #productlisting { padding: 40px 0; } }

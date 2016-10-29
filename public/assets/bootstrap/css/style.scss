@@ -1,0 +1,759 @@
+@import "reset.css";
+@import "mixins.scss";
+
+// bg colors
+$blue-color: #2196f3;
+$lightgrey-color: #e5e5e5;
+
+// text color
+$blue-text-color: #2196f3;
+$black-text-color: #000;
+
+body{	
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden; 
+}
+
+h2{
+	font:400 40px 'Roboto', sans-serif;
+	@media only screen and (max-width:767px){
+		font:400 30px 'Roboto', sans-serif;	
+	}
+	color:$blue-text-color; 
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	span{
+		color: $black-text-color;
+	}
+}
+
+.bggrey{
+	background: $lightgrey-color;
+}
+
+/****** header ******/
+#header nav{
+	background: white;
+	margin-bottom: 0;
+	border: 0px;
+	min-height: 76px;
+	.navbar-header{
+		position: relative;	
+		@media only screen and (max-width:1170px) {
+			.navbar-default{
+				margin-top: 11px;
+			}
+			.navbar-toggle{
+				margin-top: 22px;	
+			}
+			img{
+				max-width: 45%;
+			}
+		}
+		@media only screen and (min-width:1170px) {
+			.navbar-brand{
+				position: relative;
+				z-index: 999;
+				margin-left: 30px;
+				margin-top: 15px;
+			}
+			&:before{	
+				background: url("../images/logo-bg.png") no-repeat 0 0;
+				height: 85px;
+				width: 390px;
+				position: absolute;
+				content: " ";
+				left: 0;
+				top: 76px;
+				z-index: 999
+			}
+		} 
+	}
+	.navbar-nav
+		li{
+			margin-top: 13px;
+			a{
+			font: 400 16px "Roboto";
+			color: $black-text-color;
+			text-transform: uppercase;				
+			@media only screen and (max-width:1170px){
+			    text-transform: capitalize;
+				font: 400 15px "Roboto";
+				padding: 15px 6px;				 
+			}
+			&:hover{
+				color: #F21137;	
+			}
+		}
+	}		
+	
+}
+
+/****** main banner ******/
+#mainbanner{
+	position: relative;
+	overflow: hidden;
+	.banercontent{
+		position: absolute;
+		top: 175px;
+		padding: 0 15px;
+		left: 0;
+		right: 0;
+		text-align: right;
+		.buttons{
+			display: block;
+			margin-top: 62px;
+			margin-right: 16px;
+			.btn{
+				margin-right: 4px;
+			}
+		}		
+		@media only screen and (min-width:992px) and (max-width:1280px){
+			  top: 40px
+		}
+	}
+	.innercontent{
+		top: 50px;
+		padding: 0 15px;
+		.btn-default{
+			background: white;
+			border-color: white;
+			color: black
+		}
+	}
+	@media only screen and (max-width:767px){		
+		.banercontent{
+			top:auto;
+			bottom: 20px;
+			.buttons{ 
+				margin-top:0px;
+				text-align: center;
+				.btn{
+					padding: 6px 10px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width:1170px){	
+		.innercontent{
+			img{
+				max-width:30%;
+			}
+			.buttons{ 
+				margin-top:20px;
+				margin-right: 0;
+				.btn{
+					padding: 6px 10px;
+					font-size: 15px;
+					margin-right: 0;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}
+
+/****** main call tool bar ******/
+#calltoolbar{
+	background: $blue-color;
+	padding: 0px 0 20px;
+	text-align: center;
+	span{
+		font-size: 40px;
+		font-weight: 100;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	strong{
+		font-size: 72px;
+		font-weight: 500; 
+		text-transform: uppercase;
+		color: #fff;
+		position: relative;
+		top: 12px;
+	}
+}
+@media only screen and (max-width:1170px){
+	#calltoolbar{
+		text-align: center;
+		padding: 20px 0;
+		span{
+			font-size: 20px;
+			display: block
+		}			
+		strong{
+			font-size: 40px;
+			top:0;
+		}			
+	}
+}
+
+/****** home page our services ******/
+#ourservice{
+	padding: 80px 0;
+	text-align: center;
+	.bluecircle{
+		border: 3px solid #2196f3;
+		height: 150px;
+		width: 150px;
+		overflow: hidden;
+		text-align: center;
+		margin: auto;
+		line-height: 150px;
+		@include border-radius ("50%");
+		margin-bottom: 15px;
+		overflow: hidden;
+		img{
+			@include border-radius ("50%");	
+			max-width: 90%
+		}
+	}
+	.bluecircle + span{
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 500;		
+		@media only screen and (max-width:767px){
+			margin-bottom: 25px;
+			display: block; 
+		}
+	}
+}
+
+/****** home app feature ******/
+#applicationfeature{
+	padding: 80px 0;
+	position: relative;
+	background: $lightgrey-color;
+	color: #525252; 
+	.list-group + .btn-lg{
+		margin-top: 20px;
+	}
+	.list-group-item{
+		border-color: #fff;
+		span{
+			margin-right: 8px;
+		}
+	}
+	@media only screen and(min-width:1170px){ 
+		.img{
+			position: absolute;    
+			right: -50px;
+    		top: -35px;
+		}
+	}
+}
+
+/****** home general sevices ******/
+#generalservice{
+	padding: 130px 0;
+	position: relative;
+	color: #525252;
+	overflow: hidden;
+	.list-group + .btn-lg{
+		margin-top: 20px;
+	}
+	.list-group-item{
+		span{
+			margin-right: 8px;
+		}
+	} 
+	.img1{
+		position: absolute;
+		left: 1.5%;
+		bottom: -350px;
+		z-index: -1
+	}
+	.img2{
+		position: absolute;
+		left: 5%;
+		bottom: -285px;
+		z-index: -1
+	}
+	.img3{
+		position: absolute;
+		left: 8.5%;
+		bottom: -220px;
+		z-index: -1
+	} 
+	@media only screen and(min-width:768px) and (max-width:992px){ 
+		.img1{
+			bottom: -234px;
+		}
+		.img2{
+			bottom: -149px;
+		}
+		.img3{
+			bottom: -68px;
+		}
+	}
+	@media only screen and(min-width:993px) and (max-width:1170px){ 
+		.img1{
+			bottom: -400px;
+		}
+		.img2{
+			bottom: -315px;
+		}
+		.img3{
+			bottom: -222px;
+		}
+	}
+}
+
+/****** home track and report ******/
+#trackandreport{
+	background: $lightgrey-color;
+	padding: 60px 0;
+	overflow: hidden;
+	h2{
+		margin-top: 50px;
+	}
+	p{
+		margin-bottom: 30px;
+	}
+}
+
+/****** home autodxs ******/
+#autodxs{
+	padding: 80px 0;
+	h2{
+		margin-top: 50px;
+		line-height: 40px;
+		margin-bottom: 25px;
+		samp{
+			font-size: 20px;
+			color: #2196f3;
+			font-family: 'Roboto', sans-serif;
+		}
+	}
+	p{
+		line-height: 30px;
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	.setpos{
+		position: absolute;
+		top: 85px;
+		z-index: -1;
+		right: 17px;
+	}
+	@media only screen and (max-width:767px){
+		right: -50px;	
+	}
+	.appbtn{
+		background: #454545;
+		color: #fff;
+		display: block;
+		height: 80px;
+		overflow: hidden;
+		width: 80%;
+		margin-bottom: 20px;
+		@include border-radius ("5px");
+		span{
+			float:left;
+			text-transform: uppercase;
+			font-size: 20px;
+			text-align: center;    
+			margin-left: 50px;
+    		margin-top: 20px;
+			line-height: 20px;
+			span{
+				text-transform: capitalize;
+				font-size: 14px;
+				float: none;
+				margin: 0
+			}
+		}
+		.appicon{
+			float:right;
+			background: #131313;
+			padding: 20px;			
+		}
+		@media only screen and(max-width:480px){ 
+			width: 100%;
+			span{
+				font-size: 16px;
+				margin-left: 20px
+			}
+		}
+	}
+}
+
+/****** testimonials ******/
+#testimonials{
+	background: $lightgrey-color;
+	padding: 80px 0;
+	h2{
+		margin-left: 90px;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 26px;
+		margin-top: 20px;
+		span{
+			font-size: 11px;
+			color: $blue-text-color;
+			margin-top: 10px;
+			display: block;
+			img{
+				margin-left: 20px;
+				position: relative;
+				top: 5px;
+			}
+		}
+	}
+	.carousel-inner{
+		height: 210px;	
+	}
+	.carousel-indicators{
+		position: relative;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		margin: 30px 0 0;
+		bottom: 0;
+	}
+	@media only screen and(max-width:767px){
+		h2{
+			margin-left: 0;
+			margin-bottom: 20px;
+		}
+		.item img{
+			max-width: 100%;
+		}			
+	}
+}
+
+/****** support brands ******/
+#supportarea{
+	padding: 80px 0;
+	border-top:6px $blue-color solid;
+	border-bottom:6px $blue-color solid;
+	text-align: center;
+	overflow: hidden;
+	li{
+		display: inline-block;
+		margin: 0 10px;
+		img{
+			margin: auto;
+			border-radius:10px;
+			margin-bottom: 10px;
+			border:1px #000 solid;
+		}
+		span{
+			display: block;
+			font-size: 20px;
+		}
+		@media only screen and (max-width:1170px) {
+			margin-bottom: 20px;
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+	}
+}
+
+/****** product listing page ******/
+#productlisting{
+	padding: 80px 0;
+	position: relative;
+	color: #525252;
+	overflow: hidden;
+	h2{
+		margin-bottom: 80px;
+	}
+	.list-group + .btn-lg{
+		margin-top: 20px;
+	}
+	.list-group-item{
+		span{
+			margin-right: 8px;
+		}
+	}
+	img.logo{
+		margin-bottom: 30px;
+	}	
+	.toppostion{
+		z-index: 99;
+	}
+	@media only screen and(max-width:1170px){ 
+		.img img{
+			margin-bottom: -80px;
+			margin-top: 40px;
+		}
+	} 
+	.img{
+		position: absolute;
+		left: 5%;
+		bottom: -190px; 
+	}
+	.img.right{
+		right: -11%;
+		left: auto;
+	}
+	@media only screen and(min-width:769px){
+		img.logo{
+			margin-left: -90px;
+			margin-bottom: 30px;
+		}
+	}
+	@media only screen and (max-width:991px) {
+		.img{
+			position: absolute;
+			left: -5%;
+			bottom: -46px;
+		}
+		.img{
+			bottom: -80px;
+			img{
+				max-width: 80%
+			}
+		}
+		img.logo{
+			margin-left: -60px;
+			max-width: 75%;
+			margin-bottom: 20px;
+		}
+		h2{
+			margin-bottom: 20px; 	
+		}
+		.img.right{
+			bottom: -130px;
+			right: -73%;
+			img{
+				max-width: 70%;
+			}
+		}
+		.list-group-item{
+			margin-bottom: 5px;
+			img{
+				width: 30px;
+				height: 30px; 
+			}
+		}
+		.btn-lg{
+			padding: 7px 12px;
+			font-size: 14px;
+			margin-top: 0px !important;
+		}
+	}
+	@media only screen and (min-width:992px) and (max-width:1170px) {		
+		.img{
+			bottom: -160px;
+			left: -4%;
+			img{
+				max-width: 80%
+			}
+		}
+		.toppostion{
+			z-index: 99;
+		}
+		img.logo{
+			margin-left: -75px;
+			margin-bottom: 20px;
+			max-width: 75%;
+		}
+		h2{
+			margin-bottom: 20px; 	
+		}
+		.img.right{
+			bottom: -200px;
+    		right: -35%;
+		}
+		.list-group-item{
+			margin-bottom: 5px;
+			img{
+				width: 30px;
+				height: 30px; 
+			}
+		}
+		.btn-lg{
+			padding: 7px 12px;
+			font-size: 14px;
+			margin-top: 0px !important
+		}
+	}
+	@media only screen and (max-width:767px){
+		img.logo{
+			margin-left: -58px;
+			max-width: 65%;
+			margin-bottom: 20px;
+		}
+		.toppostion{
+			text-align: center;
+		}
+		.toppostion img.logo{
+			margin-left: 0
+		}
+		.toppostion .list-group{
+			text-align: left
+		}
+		.toppostion .btn-lg{
+			float: left;
+		}
+		#productlisting .img{
+			position: relative;
+			left: 0;
+		}
+		#productlisting .img img{
+			max-width: 100%;
+			margin-bottom: 0;
+			position: relative;
+			bottom: -22%;
+		}
+	}
+}
+
+/****** product detail ******/
+#product-detail{
+	padding: 80px 0;
+	color: #525252;
+	border-bottom: 80px #ddd solid;
+	h3{    
+		color: $blue-text-color;
+		font-size: 20px;
+		margin-top: 40px;
+		text-transform: uppercase;
+	}
+	p{
+		margin-bottom: 30px;
+	}
+	h5{    
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	.list-group-item span{
+		margin-right: 8px;
+	}
+	@media only screen and (min-width:1170px) {
+		img.logo{
+			margin-left: -60px;
+		}
+	}
+}
+
+/***** contact us ******/
+#contactus{
+	padding: 80px 0;
+	h2{
+		margin-bottom: 70px;		
+	}
+	.contentbox{
+		margin: 5px 0 15px;
+		font-size: 15px;
+		@media only screen and (max-width:639px) {
+			.row{
+				margin-bottom: 15px;
+			}
+			span{
+				width: 100%;	
+			}
+		}
+	}
+}
+
+/***** contact us form ******/
+#contactforms{
+	background: $lightgrey-color;
+	padding: 80px 0;
+	textarea{
+		min-height: 80px;	
+	}
+	textarea:not(*:root){
+		min-height: 90px;
+	}
+	.ie10 textarea, :-ms-lang(x), textarea{
+		min-height: 90px;
+	}
+}
+
+/***** contact us page footer ******/
+#footer.contactfooter{
+	padding: 30px 0;
+	text-align: center;
+	.logos{
+		text-align: left;
+	}
+	p{
+		font-size: 14px;
+		margin-top: 20px;
+		a{
+			margin-right: 10px;
+			
+		}
+	}
+}
+
+/***** footer ******/
+#footer{
+	background: $lightgrey-color;
+	padding: 50px 0 20px;
+	border-bottom: 30px #000 solid;
+	h2{
+		font-size: 36px;
+		text-transform: capitalize;
+		margin-bottom: 15px;
+	}
+	.contentbox{
+		margin: 5px 0 15px;
+		font-size: 15px;
+		.col-md-4.col-xs-6::after {
+			content: " : ";
+			position: absolute;
+			right: -10px;
+			top: 0;
+		}
+		@media only screen and (max-width:639px) {
+			.row{
+				margin-bottom: 15px;
+			}
+			span{
+				width: 100%;	
+			}
+		}
+	}
+	.formset{
+		input{
+			&[type="text"]{
+				background: $lightgrey-color;
+			}
+		}
+		textarea{
+			background: $lightgrey-color;
+			color: #000;
+			margin-left: -15px;
+		}
+		.btn{
+			margin-top: 15px;
+		}
+		.copyright{
+			font-size: 14px;
+			text-align: right;
+			margin-right: 30px;
+			margin-top: 100px;
+			a{
+				margin-right: 15px;
+			}
+		}
+		@media only screen and (max-width:1170px) {
+			textarea{
+				margin-left: 0;
+			}
+			.copyright{
+				text-align: center;
+				margin-left: 15px;
+				margin-right: 15px;
+				margin: 35px 15px 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:1170px){
+	#productlisting {
+		padding: 40px 0;
+	}
+}
