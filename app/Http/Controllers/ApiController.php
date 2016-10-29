@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Model\Preferences;
 use App\Http\Requests;
-
+use App\Model\Pages;
 class ApiController extends Controller
 {
     //
@@ -29,7 +29,16 @@ class ApiController extends Controller
         curl_setopt($ch, CURLOPT_POST, 1);
         $result = curl_exec ($ch); 
         curl_close($ch);
-        print_r($result);die;
+        //print_r($result);die;
+        if(isset($result)){
+            $page = new \App\Model\Pages();
 
+            $page->title = "nftdata";
+            $page->text = $result;
+            $page->locked = 'no';
+            //$page->created_date = time();
+            $page->save();
+            echo "Successfully Done!";die;
+        }
     }
 }
