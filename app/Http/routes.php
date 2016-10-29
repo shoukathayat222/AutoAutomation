@@ -17,6 +17,10 @@ Route::get('/', function () {
 });*/
 Route::get('/', 'IndexController@index');
 Route::get('/index', 'IndexController@index');
+//Route::get('/getdata', 'ApiController@getdata');
+//Route::resource('/getdata', 'ApiController@getdata');
+
+Route::get('/storedata', 'ApiController@storedata');
 
 Route::post('/feedback', 'IndexController@feedback');
 Route::post('/applink', 'IndexController@applink');
@@ -103,4 +107,3 @@ Route::get('/admin/generalservices', 'Admin\GeneralservicesController@index');
 
 
 
-Route::get('/getdata', 'ApiController@getdata');
